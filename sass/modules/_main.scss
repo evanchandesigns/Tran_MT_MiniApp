@@ -1,0 +1,27 @@
+img, video {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+h2{
+    font-family: 'Abril Fatface', 'Impact', cursive;
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: $black;
+}
+
+p{
+    font-family: 'Heebo', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    color: $black;
+}
