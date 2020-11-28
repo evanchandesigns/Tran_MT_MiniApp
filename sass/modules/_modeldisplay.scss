@@ -1,0 +1,44 @@
+section#models {
+    background-color: $black;
+    padding: 30px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        border-radius: 20px;
+    }
+    img:hover{
+        cursor: pointer;
+        -webkit-transform: scale(1.015);
+        -moz-transform: scale(1.015);
+        -o-transform: scale(1.015);
+        -ms-transform: scale(1.015);
+        -webkit-filter: brightness(1.5);
+        -moz-filter: brightness(1.5);
+        -ms-filter: brightness(1.5);
+        -o-filter: brightness(1.5);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+    }
+    p {
+        font-size: 16px;
+        color: $white;
+    }
+    h3{
+        color: $white;
+        cursor: pointer;
+    }
+    h3:hover {
+        -webkit-filter: drop-shadow(8px 3px 10px $white );
+        -moz-filter: drop-shadow(8px 3px 10px $white );
+        -o-filter: drop-shadow(8px 3px 10px $white );
+        -ms-filter: drop-shadow(8px 3px 10px $white );
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+    }
+
+}

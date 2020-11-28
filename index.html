@@ -17,7 +17,7 @@
     <main id="app">
         <section id="top">
             <h1 class="hidden">MINI — NEWEST MODELS</h1>
-            <h2>Check out the latest models from MINI!</h2>
+            <h2>CHECK OUT THE LATEST MODELS FROM</h2>
             <p>Here are all the newest models that we have come out with to accompany your adventure for this
                 winter!<br> At
                 <span class="bold">MINI</span>, we ensure that our valuable customers
@@ -27,7 +27,11 @@
             </p>
         </section>
         <section id="models">
-
+            <div id="3door" class="eachModel" v-for="model in models" v-if="model.id <= 1">
+                <img :src="'images/' + model.image">
+                <h3>{{ model.name}}</h3>
+                <p>$23,490</p>
+            </div>
         </section>
     </main>
     <script type="module" src="js/main.js"></script>

@@ -2,9 +2,9 @@
     // $result will store the database request results so that we can encode and return them to index.php
     $result = array();
 
-    function getAllUsers($conn)
+    function getAllModels($conn)
     {
-        $query = "SELECT * FROM profdata";
+        $query = "SELECT * FROM tbl_models";
         $runQuery = $conn->query($query);
 
         while ($row = $runQuery->fetchAll(PDO::FETCH_ASSOC)) {
@@ -15,9 +15,9 @@
     }
 
     // get a specific user
-    function getSingleUser($conn, $id)
+    function getSingleModel($conn, $id)
     {
-        $query = "SELECT * FROM profdata WHERE id=" . $id . "";
+        $query = "SELECT * FROM tbl_models WHERE id=" . $id . "";
         $runQuery = $conn->query($query);
 
         while ($row = $runQuery->fetchAll(PDO::FETCH_ASSOC)) {

@@ -1,17 +1,1 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @import 'modules/_mediaqueries.scss';
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   sass\master.scss 4:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import 'modules/_mediaqueries.scss';\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   sass\\master.scss 4:9  root stylesheet";
-}
+section#top{display:flex;justify-content:center;flex-direction:column;align-items:center}section#top p{align-self:center;max-width:350px;padding:15px}section#top h2{align-self:center}img,video{width:100%}.hidden{display:none}body{background-color:#f4f6f7}.bold{font-weight:500}h2{font-family:"Abril Fatface","Impact",cursive;font-size:40px;letter-spacing:3px;text-align:center;color:#1c2833;padding:20px}h3{font-family:"Abril Fatface","Impact",cursive;font-size:25px;padding:10px;text-align:center}p{font-family:"Heebo",Arial,Helvetica,sans-serif;font-size:13px;font-weight:300;text-align:center;color:#1c2833;padding:5px}section#models{background-color:#1c2833;padding:30px 15px 30px 15px;display:flex;flex-direction:column}section#models img{border-radius:20px}section#models img:hover{cursor:pointer;-webkit-transform:scale(1.015);-moz-transform:scale(1.015);-o-transform:scale(1.015);-ms-transform:scale(1.015);-webkit-filter:brightness(1.5);-moz-filter:brightness(1.5);-ms-filter:brightness(1.5);-o-filter:brightness(1.5);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease}section#models p{font-size:16px;color:#f4f6f7}section#models h3{color:#f4f6f7;cursor:pointer}section#models h3:hover{-webkit-filter:drop-shadow(8px 3px 10px #F4F6F7);-moz-filter:drop-shadow(8px 3px 10px #F4F6F7);-o-filter:drop-shadow(8px 3px 10px #F4F6F7);-ms-filter:drop-shadow(8px 3px 10px #F4F6F7);-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease;-ms-transition:all .5s ease}/*# sourceMappingURL=master.css.map */
