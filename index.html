@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Heebo:wght@300;500&display=swap"
+        rel="stylesheet">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/master.css" type="text/css" media="screen">
+    <title>MINI</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+
+<body>
+    <main id="app">
+        <section id="top">
+            <h1 class="hidden">MINI — NEWEST MODELS</h1>
+            <h2>CHECK OUT THESE LATEST MODELS</h2>
+            <img src="images/logo.png" alt="Logo" id="logo">
+            <p>Here are all the newest models that we have come out with to accompany your adventure for this
+                winter!<br> At
+                <span class="bold">MINI</span>, we ensure that our valuable customers
+                are happy with their purchases, let us know how can we help to pick your own <span
+                    class="bold">MINI</span>.<br>
+                <span class="bold">Click</span> on each image to find out about each model's information and details.
+            </p>
+        </section>
+        <section id="models">
+            <span class="hidden error"></span>
+            <div v-for="model in models" v-if="model.id <= 1" class="eachModel">
+                <img :src="'images/' + model.image" @click="display3Door">
+                <h3 @click="display3Door">{{ model.name}}</h3>
+                <p>FROM $23,490</p>
+                <div class="infoBox" :class="{'hidden' : show3Door}">
+                    <span class="closeButton" @click="remove3Door">CLOSE[X]</span><br>
+                    <p>{{ model.description }}</p>
+                    <span class=" colours">COLOURS:</span>
+                    <div class="colorBox" v-for="model in models" v-if="model.id <= 3">
+                        <p>{{ model.color }}</p>
+                        <img :src="'images/' + model.image" @click="scalePhoto" :class="{'scaleUpClass': scaleUp}">
+                    </div>
+                </div>
+            </div>
+
+            <div v-for="model in models" v-if="model.id > 3 && model.id < 5" class="eachModel">
+                <img :src="'images/' + model.image" @click="display5Door">
+                <h3 @click="display5Door">{{ model.name}}</h3>
+                <p>FROM $24,790</p>
+                <div class="infoBox" :class="{'hidden' : show5Door}">
+                    <span class="closeButton" @click="remove5Door">CLOSE[X]</span><br>
+                    <p>{{ model.description }}</p>
+                    <span class=" colours">COLOURS:</span>
+                    <div class="colorBox" v-for="model in models" v-if="model.id > 3 && model.id < 7 ">
+                        <p>{{ model.color }}</p>
+                        <img :src="'images/' + model.image" @click="scalePhoto" :class="{'scaleUpClass': scaleUp}">
+                    </div>
+                </div>
+            </div>
+
+            <div v-for="model in models" v-if="model.id > 6 && model.id < 8" class="eachModel">
+                <img :src="'images/' + model.image" @click="displayClubman">
+                <h3 @click="displayClubman">{{ model.name}}</h3>
+                <p>FROM $29,990</p>
+                <div class="infoBox" :class="{'hidden' : showClubman}">
+                    <span class="closeButton" @click="removeClubman">CLOSE[X]</span><br>
+                    <p>{{ model.description }}</p>
+                    <span class=" colours">COLOURS:</span>
+                    <div class="colorBox" v-for="model in models" v-if="model.id > 6 && model.id < 10 ">
+                        <p>{{ model.color }}</p>
+                        <img :src="'images/' + model.image" @click="scalePhoto" :class="{'scaleUpClass': scaleUp}">
+                    </div>
+                </div>
+            </div>
+
+            <div v-for="model in models" v-if="model.id > 9 && model.id < 11" class="eachModel">
+                <img :src="'images/' + model.image" @click="displayConvert">
+                <h3 @click="displayConvert">{{ model.name}}</h3>
+                <p>FROM $30,090</p>
+                <div class="infoBox" :class="{'hidden' : showConvert}">
+                    <span class="closeButton" @click="removeConvert">CLOSE[X]</span><br>
+                    <p>{{ model.description }}</p>
+                    <span class=" colours">COLOURS:</span>
+                    <div class="colorBox" v-for="model in models" v-if="model.id > 9 && model.id < 13 ">
+                        <p>{{ model.color }}</p>
+                        <img :src="'images/' + model.image" @click="scalePhoto" :class="{'scaleUpClass': scaleUp}">
+                    </div>
+                </div>
+            </div>
+
+            <div v-for="model in models" v-if="model.id > 12 && model.id < 14" class="eachModel">
+                <img :src="'images/' + model.image" @click="displayCountry">
+                <h3 @click="displayCountry">{{ model.name}}</h3>
+                <p>FROM $30,090</p>
+                <div class="infoBox" :class="{'hidden' : showCountry}">
+                    <span class="closeButton" @click="removeCountry">CLOSE[X]</span><br>
+                    <p>{{ model.description }}</p>
+                    <span class=" colours">COLOURS:</span>
+                    <div class="colorBox" v-for="model in models" v-if="model.id > 12">
+                        <p>{{ model.color }}</p>
+                        <img :src="'images/' + model.image" @click="scalePhoto" :class="{'scaleUpClass': scaleUp}">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

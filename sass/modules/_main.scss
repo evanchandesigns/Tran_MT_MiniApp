@@ -1,0 +1,54 @@
+img, video {
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    background-color: $white;
+}
+
+.bold {
+    font-weight: 500;
+}
+
+.error {
+    font-size: 30px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Heebo', Arial, Helvetica, sans-serif;
+    color: $white;
+    text-align: center;
+}
+
+h2{
+    font-family: 'Abril Fatface', 'Impact', cursive;
+    font-size: 40px;
+    letter-spacing: 3px;
+    text-align: center;
+    color: $black;
+    padding: 20px;
+}
+
+h3{
+    font-family: 'Abril Fatface', 'Impact', cursive;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+}
+
+p{
+    font-family: 'Heebo', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    text-align: center;
+    color: $black;
+    padding: 15px;
+    line-height: 0.5cm;
+}
+
+#logo {
+    max-width: 250px;
+}

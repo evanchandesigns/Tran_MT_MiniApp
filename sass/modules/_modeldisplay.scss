@@ -1,0 +1,106 @@
+section#models {
+    background-color: $black;
+    padding: 30px 15px 30px 15px;
+    display: flex;
+    flex-direction: column;
+
+    img{
+        border-radius: 20px;
+        max-width: 600px;
+        cursor: pointer;
+    }
+    img:hover{
+        cursor: pointer;
+        max-width: 600px;
+        -webkit-transform: scale(1.015);
+        -moz-transform: scale(1.015);
+        -o-transform: scale(1.015);
+        -ms-transform: scale(1.015);
+        -webkit-filter: brightness(1.5);
+        -moz-filter: brightness(1.5);
+        -ms-filter: brightness(1.5);
+        -o-filter: brightness(1.5);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+    }
+    p {
+        font-size: 16px;
+        color: $white;
+        padding: 5px;
+    }
+    h3{
+        color: $white;
+        cursor: pointer;
+    }
+    h3:hover {
+        -webkit-filter: drop-shadow(8px 3px 10px $white );
+        -moz-filter: drop-shadow(8px 3px 10px $white );
+        -o-filter: drop-shadow(8px 3px 10px $white );
+        -ms-filter: drop-shadow(8px 3px 10px $white );
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+    }
+
+    .eachModel {
+        margin-bottom: 50px;
+    }
+
+    .infoBox {
+        background-color: #37474F;
+        padding: 10px;
+        margin-bottom: 30px;
+        p{
+            text-align: left;
+            font-size: 14px;
+            padding: 10px;
+        }
+        span.closeButton {
+            font-size: 20px;
+            float: right;
+            color: $white;
+            font-family: 'Abril Fatface', 'Impact', cursive;
+            color: $white;
+            margin-bottom: 10px;
+            padding: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .colours{
+        font-size: 18px;
+        color: $white;
+        font-weight: 600;
+        font-family: 'Heebo', Arial, Helvetica, sans-serif;
+        color: $white;
+        text-align: center;
+    }
+
+    .colorBox {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: 30px;
+        img {
+            max-width: 300px;
+            margin-top: -50px;
+            cursor: pointer;
+        }
+    }
+
+    .scaleUpClass{
+       -webkit-transform: scale(0.3);
+       -moz-transform: scale(0.3);
+       -ms-transform: scale(0.3);
+       -o-transform: scale(0.3);
+       -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+       -ms-transition: all 1s ease;
+       -webkit-transition: all 1s ease;
+    }
+}
