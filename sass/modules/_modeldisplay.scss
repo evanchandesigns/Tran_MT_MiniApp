@@ -4,7 +4,7 @@ section#models {
     display: flex;
     flex-direction: column;
 
-    img {
+    img{
         border-radius: 20px;
     }
     img:hover{
@@ -42,4 +42,49 @@ section#models {
         -ms-transition: all 0.5s ease;
     }
 
+    .infoBox {
+        background-color: #37474F;
+        padding: 10px;
+        margin-bottom: 30px;
+        p{
+            text-align: left;
+            font-size: 14px;
+            padding: 10px;
+        }
+        span.closeButton {
+            font-size: 20px;
+            float: right;
+            color: $white;
+            font-family: 'Abril Fatface', 'Impact', cursive;
+            color: $white;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+    }
+
+    .colours{
+        font-size: 18px;
+        color: $white;
+        font-weight: 600;
+        font-family: 'Heebo', Arial, Helvetica, sans-serif;
+        color: $white;
+        text-align: center;
+    }
+
+    .colorBox {
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        margin-top: 30px;
+        img {
+            max-width: 300px;
+            margin-top: -50px;
+        }
+    }
+
+    .scaleUpClass{
+       transform: scale(0.3);
+    }
 }

@@ -29,10 +29,33 @@
         </section>
         <section id="models">
             <span class="hidden error"></span>
-            <div id="3door" class="eachModel" v-for="model in models" v-if="model.id <= 1">
-                <img :src="'images/' + model.image">
-                <h3>{{ model.name}}</h3>
+            <div v-for="model in models" v-if="model.id <= 1">
+                <img :src="'images/' + model.image" @click="display3Door">
+                <h3 @click="display3Door">{{ model.name}}</h3>
                 <p>FROM $23,490</p>
+                <div class="infoBox" :class="{'hidden' : show3Door}">
+                    <span class="closeButton" @click="remove3Door">CLOSE[X]</span><br>
+                    <p>{{ model.description }}</p>
+                    <span class=" colours">COLOURS:</span>
+                    <div class="colorBox" v-for="model in models" v-if="model.id <= 3">
+                        <p>{{ model.color }}</p>
+                        <img :src="'images/' + model.image" @click="scalePhoto" :class="{'scaleUpClass': scaleUp}">
+                    </div>
+                </div>
+            </div>
+            <div v-for="model in models" v-if="model.id > 3 && model.id < 5">
+                <img :src="'images/' + model.image" @click="display5Door">
+                <h3 @click="display5Door">{{ model.name}}</h3>
+                <p>FROM $24,790</p>
+                <div class="infoBox" :class="{'hidden' : show5Door}">
+                    <span class="closeButton" @click="remove5Door">CLOSE[X]</span><br>
+                    <p>{{ model.description }}</p>
+                    <span class=" colours">COLOURS:</span>
+                    <!-- <div class="colorBox" v-for="model in models" v-if="model.id <= 3">
+                        <p>{{ model.color }}</p>
+                        <img :src="'images/' + model.image" @click="scalePhoto" :class="{'scaleUpClass': scaleUp}">
+                    </div> -->
+                </div>
             </div>
         </section>
     </main>
