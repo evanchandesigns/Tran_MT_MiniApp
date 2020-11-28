@@ -14,7 +14,7 @@ import { fetchData } from "./components/DataMiner.js";
                 .then(data => {
                     data.forEach(model => this.models.push(model));
                 })
-                .catch(err => console.log(err));
+                .catch(err => displayError(err));
         },
 
         methods: {
@@ -22,4 +22,11 @@ import { fetchData } from "./components/DataMiner.js";
         }
 
     }).$mount("#app");
+
+    function displayError() {
+        let errorMsg = document.querySelector(".error");
+
+        errorMsg.classList.remove("hidden");
+        errorMsg.textContent = ("Something went wrong! Data is unable to be fetched.");
+    }
 })();
