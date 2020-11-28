@@ -6,9 +6,12 @@ section#models {
 
     img{
         border-radius: 20px;
+        max-width: 600px;
+        cursor: pointer;
     }
     img:hover{
         cursor: pointer;
+        max-width: 600px;
         -webkit-transform: scale(1.015);
         -moz-transform: scale(1.015);
         -o-transform: scale(1.015);
@@ -42,6 +45,10 @@ section#models {
         -ms-transition: all 0.5s ease;
     }
 
+    .eachModel {
+        margin-bottom: 50px;
+    }
+
     .infoBox {
         background-color: #37474F;
         padding: 10px;
@@ -59,6 +66,7 @@ section#models {
             color: $white;
             margin-bottom: 10px;
             padding: 10px;
+            cursor: pointer;
         }
     }
 
@@ -81,10 +89,18 @@ section#models {
         img {
             max-width: 300px;
             margin-top: -50px;
+            cursor: pointer;
         }
     }
 
     .scaleUpClass{
-       transform: scale(0.3);
+       -webkit-transform: scale(0.3);
+       -moz-transform: scale(0.3);
+       -ms-transform: scale(0.3);
+       -o-transform: scale(0.3);
+       -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+       -ms-transition: all 1s ease;
+       -webkit-transition: all 1s ease;
     }
 }
